@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -18,6 +20,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.List;
 
 import javax.security.auth.callback.CallbackHandler;
 
@@ -179,4 +183,21 @@ public class Login extends AppCompatActivity {
             }
         });
     }
+
+    //public void onClickFindWorkout(View view)
+   // {
+        //TextView workouts=(TextView)findViewById(R.id.);
+        //Spinner workout_type=(Spinner) findViewById(R.id.workout_type);
+        //String workout = String.valueOf(workout_type.getSelectedItem());
+        //workouts.setText(workout);
+        //List<String > workoutList=expert.getWorkouts(workout);
+        //StringBuilder workoutsformatted=new StringBuilder();
+        //for(String work:workoutList)
+        //{
+        //    workoutsformatted.append(work).append('\n');
+       // }
+       // workouts.setText(workoutsformatted);
+    //}
+
+
 }

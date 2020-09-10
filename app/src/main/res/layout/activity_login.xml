@@ -16,7 +16,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
+
         android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#204883"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,6 +32,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+
+                <Button
+                    android:id="@+id/contact_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/curvesss"
+                    android:text="contact us"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
                 <EditText
                     android:id="@+id/login_text_id"
                     android:layout_width="300dp"
@@ -42,7 +59,9 @@
                     android:ems="10"
                     android:hint="Enter Covid BLR ID"
                     android:inputType="textPersonName"
-                    android:textColor="#000000"
+                    android:textColor="#FBFBFB"
+
+                    android:textColorHint="#979292"
                     android:textSize="25dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +79,9 @@
                     android:ems="10"
                     android:hint="Enter Age (in years)"
                     android:inputType="number"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#979292"
+                    android:textColorHint="#979292"
                     android:textSize="25dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -72,11 +93,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="75dp"
+                    android:layout_marginTop="65dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:text="Select Gender"
-                    android:textColor="#000000"
+                    android:textColor="#FBFBFB"
                     android:textSize="25dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="48dp"
+                    android:layout_marginTop="30dp"
                     android:layout_marginEnd="50dp"
                     android:layout_marginRight="50dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -100,7 +121,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:text="Male"
-                        android:textColor="#000000"
+                        android:buttonTint="#7cfc00"
+                        android:textColor="#FFFFFF"
                         android:textSize="25dp" />
 
                     <RadioButton
@@ -108,7 +130,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:text="Female"
-                        android:textColor="#000000"
+                        android:buttonTint="#7cfc00"
+                        android:textColor="#F8F8F8"
                         android:textSize="25dp" />
 
                     <RadioButton
@@ -116,27 +139,44 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:text="Other"
-                        android:textColor="#000000"
+                        android:buttonTint="#7cfc00"
+                        android:textColor="#FFFFFF"
                         android:textSize="25dp" />
 
                 </RadioGroup>
-
+                <!--<Spinner
+                    android:id="@+id/workout_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:entries="@array/gender_types"
+                    android:textSize="40dp"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/login_text_age" />/>
+-->
                 <TextView
                     android:id="@+id/login_label_tick"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="75dp"
+                    android:layout_marginTop="230dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:text="Tick the appropriate boxes"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="25dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.494"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/login_radiogroup_gender" />
+                    app:layout_constraintTop_toBottomOf="@+id/login_label_gender" />
 
                 <CheckBox
                     android:id="@+id/login_checkbox_diabetes"
@@ -144,9 +184,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="30dp"
                     android:text="Diabetes"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="#7cfc00"
                     android:textSize="25dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/login_label_tick" />
@@ -157,9 +198,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginLeft="50dp"
+                    android:buttonTint="#7cfc00"
                     android:layout_marginTop="15dp"
                     android:text="Kidney Disorders"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="25dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/login_checkbox_diabetes" />
@@ -170,9 +212,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginLeft="50dp"
+                    android:buttonTint="#7cfc00"
                     android:layout_marginTop="15dp"
                     android:text="Heart Disorders"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="25dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/login_checkbox_kidney" />
@@ -185,7 +228,8 @@
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="15dp"
                     android:text="Respiratory Disorders"
-                    android:textColor="#000000"
+                    android:buttonTint="#7cfc00"
+                    android:textColor="#FFFFFF"
                     android:textSize="25dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/login_checkbox_heart" />
@@ -198,7 +242,8 @@
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="15dp"
                     android:text="Pregnant"
-                    android:textColor="#000000"
+                    android:buttonTint="#7cfc00"
+                    android:textColor="#FFFFFF"
                     android:textSize="25dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/login_checkbox_respiratory" />
@@ -209,11 +254,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="100dp"
                     android:layout_marginLeft="100dp"
-                    android:layout_marginTop="75dp"
+                    android:layout_marginTop="65dp"
+                    android:buttonTint="#7cfc00"
                     android:layout_marginEnd="100dp"
                     android:layout_marginRight="100dp"
                     android:text="Tick the appropriate boxes"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="25dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -225,9 +271,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="50dp"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="30dp"
+                    android:buttonTint="#7cfc00"
                     android:text="Aayushmaan Bharath"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="25dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/login_label_tickcard" />
@@ -239,8 +286,9 @@
                     android:layout_marginStart="50dp"
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="15dp"
+                    android:buttonTint="#7cfc00"
                     android:text="Aarogya Karnataka"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="25dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/login_checkbox_aayushmaan" />
@@ -253,7 +301,8 @@
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="15dp"
                     android:text="Insurance"
-                    android:textColor="#000000"
+                    android:buttonTint="#7cfc00"
+                    android:textColor="#FFFFFF"
                     android:textSize="25dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/login_checkbox_aarogya" />
@@ -268,7 +317,8 @@
                     android:layout_marginEnd="100dp"
                     android:layout_marginRight="100dp"
                     android:layout_marginBottom="100dp"
-                    android:background="#000000"
+
+                    android:background="@drawable/curvesss"
                     android:text="UPDATE"
                     android:textColor="#FFFFFF"
                     android:textSize="25dp"

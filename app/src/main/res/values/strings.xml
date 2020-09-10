@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Mycovid</string>
+    <string-array name="hospitalnamesss">
+        <item>covid centre</item>
+        <item>Rajiv gandhi hospital</item>
+        <item>Victoria hospital</item>
+        <item>Rajarajeshwari Medical College and Hospital</item>
+        <item>Apollo Hospital</item>
+        <item>BGS Global Hospital</item>
+
+    </string-array>
+
+    <string-array name="gender_types">
+
+        <item>male</item>
+        <item>female</item>
+        <item>others</item>
+
+    </string-array>
 </resources>

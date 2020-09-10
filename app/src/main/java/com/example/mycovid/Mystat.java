@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -31,6 +32,15 @@ public class Mystat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mystat);
 
+        /*TextView top=new TextView(this);
+        top.setText("Developers are working to add more features");
+        top.setEllipsize(TextUtils.TruncateAt.MARQUEE);
+        top.setHorizontallyScrolling(true);
+        top.setMarqueeRepeatLimit(-1);
+        top.setFocusable(true);
+        top.setFocusableInTouchMode(true);*/
+        TextView tv =(TextView)this.findViewById(R.id.tv);
+        tv.setSelected(true);
         db = FirebaseDatabase.getInstance();
         ref = db.getReference("Member");
 
@@ -38,6 +48,10 @@ public class Mystat extends AppCompatActivity {
         status = findViewById(R.id.mystat_text_status);
 
         submit = findViewById(R.id.mystat_button_status);
+
+        TextView tv =(TextView)this.findViewById(R.id.tv);
+        tv.setSelected(true);
+
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override

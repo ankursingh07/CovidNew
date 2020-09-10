@@ -9,6 +9,22 @@
     tools:context=".Mystat">
 
 
+    <!-- <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Stay home, stay healthy.    Your health is our priority"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/mystat_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    -->
     <androidx.cardview.widget.CardView
         android:id="@+id/mystat_card"
         android:layout_width="0dp"
@@ -19,6 +35,8 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
+        android:background="#092065"
+        app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,12 +45,14 @@
         <ScrollView
             android:id="@+id/mystat_scroll"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#E804E4">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/mystat_card_constraint"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="#E708EF">
 
                 <EditText
                     android:id="@+id/mystat_text_id"
@@ -47,6 +67,8 @@
                     android:hint="Enter Covid BLR ID"
                     android:inputType="textPersonName"
                     android:textColor="#000000"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#959090"
                     android:textSize="30dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +76,7 @@
 
                 <TextView
                     android:id="@+id/mystat_text_status"
-                    android:layout_width="300dp"
+                    android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="100dp"
                     android:layout_marginLeft="100dp"
@@ -62,13 +84,15 @@
                     android:layout_marginEnd="100dp"
                     android:layout_marginRight="100dp"
                     android:layout_marginBottom="100dp"
+                    android:ellipsize="marquee"
                     android:text="Loading Status....."
-                    android:textColor="#000000"
+                    android:textColor="#FFFDFD"
                     android:textSize="30dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/mystat_button_status" />
+
 
                 <Button
                     android:id="@+id/mystat_button_status"
@@ -79,14 +103,29 @@
                     android:layout_marginTop="75dp"
                     android:layout_marginEnd="100dp"
                     android:layout_marginRight="100dp"
+                    android:background="@drawable/curves"
                     android:text="CHECK STATUS"
-                    android:textSize="30dp"
                     android:textColor="#FFFFFF"
-                    android:background="#000000"
+                    android:textSize="30dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/mystat_text_id" />
 
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:gravity="center_horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="Stay home, stay healthy.           Your health is our only priority."
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>
