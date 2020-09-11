@@ -368,6 +368,7 @@
             android:text="BED STATISTICS"
             android:textColor="#FFFFFF"
             android:textSize="30dp"
+            android:onClick="Bed_statss"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/main_card_recovered" />
@@ -385,6 +386,7 @@
             android:text="UPDATE DETAILS"
             android:textColor="#FFFFFF"
             android:textSize="30dp"
+            android:onClick="update_detailsss"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.487"
             app:layout_constraintStart_toStartOf="parent"
@@ -399,15 +401,46 @@
             android:layout_marginTop="50dp"
             android:layout_marginEnd="100dp"
             android:layout_marginRight="100dp"
-            android:layout_marginBottom="75dp"
             android:background="@drawable/curves"
+            android:onClick="check_my_statss"
             android:text="CHECK MY STATUS"
             android:textColor="#FFFFFF"
             android:textSize="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/main_button_update" />
+        <Button
+            android:id="@+id/contact_us"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/curves"
+            android:text="CONTACT US"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:onClick="contact_us"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_button_mystat" />
+        <!--<Button
+            android:id="@+id/contact_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/curvesss"
+            android:text="contact us"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
+
+            android:onClick="Contact_us"/>-->
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

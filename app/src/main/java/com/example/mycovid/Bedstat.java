@@ -15,7 +15,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Bedstat extends AppCompatActivity {
 
-    TextView covidcentre_general;
+    /*TextView covidcentre_general;
     TextView covidcentre_oxygen;
     TextView covidcentre_ventilator;
 
@@ -41,13 +41,13 @@ public class Bedstat extends AppCompatActivity {
 
     FirebaseDatabase db;
     DatabaseReference ref;
-
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bedstat);
 
-        covidcentre_general = findViewById(R.id.bedstat_text_covidcentre_general);
+        /*covidcentre_general = findViewById(R.id.bedstat_text_covidcentre_general);
         covidcentre_oxygen = findViewById(R.id.bedstat_text_covidcentre_oxygen);
         covidcentre_ventilator = findViewById(R.id.bedstat_text_covidcentre_ventilator);
 
@@ -113,7 +113,7 @@ public class Bedstat extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
-        });
+        });*/
 
     }
 }

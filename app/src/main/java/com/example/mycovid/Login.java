@@ -27,7 +27,7 @@ import javax.security.auth.callback.CallbackHandler;
 
 public class Login extends AppCompatActivity {
 
-    Button update;
+    /*Button update;
 
     EditText id;
     EditText age;
@@ -55,12 +55,14 @@ public class Login extends AppCompatActivity {
 
     String temp_id;
 
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        update = findViewById(R.id.login_button_update);
+        /*update = findViewById(R.id.login_button_update);
 
         id = findViewById(R.id.login_text_id);
         age = findViewById(R.id.login_text_age);
@@ -198,6 +200,8 @@ public class Login extends AppCompatActivity {
        // }
        // workouts.setText(workoutsformatted);
     //}
+*/
+    }
 
 
 }

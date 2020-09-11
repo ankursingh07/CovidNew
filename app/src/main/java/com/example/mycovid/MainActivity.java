@@ -18,7 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button update;
+   /* Button update;
     Button bedstat;
     Button mystat;
 
@@ -35,14 +35,38 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference hos;
 
     int available;
-    int occupied;
+    int occupied;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
-        update = findViewById(R.id.main_button_update);
+
+    public void update_detailsss(View view)
+    {
+       Intent intent = new Intent(this,Login.class);
+    startActivity(intent);
+    }
+
+    public void Bed_statss(View view)
+    {
+        Intent intent = new Intent(this,Bedstat.class);
+        startActivity(intent);
+    }
+
+    public void check_my_statss(View view)
+    {
+        Intent intent = new Intent(this,Mystat.class);
+        startActivity(intent);
+    }
+    public void contact_us(View view)
+    {
+        Intent intent = new Intent(this,ContactUs.class);
+        startActivity(intent);
+    }
+       /* update = findViewById(R.id.main_button_update);
         bedstat = findViewById(R.id.main_button_bedstat);
         mystat = findViewById(R.id.main_button_mystat);
 
@@ -155,4 +179,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+        */
 }

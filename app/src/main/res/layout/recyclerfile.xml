@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <!--<androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#204883"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/mytext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Name"
+            android:layout_marginLeft="25dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#9DFF48"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="136dp"
+            android:text="description1"
+            android:textSize="23dp"
+            android:textColor="#9DFF48"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginTop="70dp" />
+        <TextView
+            android:id="@+id/mytext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="136dp"
+            android:text="description2"
+            android:textSize="23dp"
+            android:textColor="#9DFF48"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginTop="110dp" />
+        <TextView
+            android:id="@+id/mytext3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="136dp"
+            android:text="description3"
+            android:textSize="23dp"
+            android:textColor="#9DFF48"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginTop="150dp" />
+        <TextView
+            android:id="@+id/mytext4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="136dp"
+            android:layout_marginBottom="20dp"
+            android:text="description4"
+            android:textSize="23dp"
+            android:textColor="#9DFF48"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginTop="190dp" />
+
+    </androidx.cardview.widget.CardView>
+-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bedstat_card_covidcentre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#204883"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bedstat_constraint_covidcentre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bedstat_label_covdicentre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Covid Centre"
+                android:textColor="#9DFF48"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bedstat_label_covidcentre_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:text="Location:"
+                android:textColor="#9DFF48"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bedstat_label_covdicentre" />
+
+            <TextView
+                android:id="@+id/bedstat_label_covidcentre_general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:text="General beds: "
+                android:textColor="#9DFF48"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bedstat_label_covidcentre_location" />
+
+            <TextView
+                android:id="@+id/bedstat_label_covidcentre_oxygen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:text="Beds with oxygen: "
+                android:textColor="#9DFF48"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bedstat_label_covidcentre_general" />
+
+            <TextView
+                android:id="@+id/bedstat_label_covidcentre_ventilator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:text="Beds with ventilator: "
+                android:textColor="#9DFF48"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bedstat_label_covidcentre_oxygen" />
+
+            <TextView
+                android:id="@+id/bedstat_text_covidcentre_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Nelamangala"
+                android:textColor="#9DFF48"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bedstat_label_covdicentre" />
+
+            <TextView
+                android:id="@+id/bedstat_text_covidcentre_general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:text="5000"
+                android:textColor="#9DFF48"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bedstat_text_covidcentre_location" />
+
+            <TextView
+                android:id="@+id/bedstat_text_covidcentre_oxygen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:text="5000"
+                android:textColor="#9DFF48"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bedstat_text_covidcentre_general" />
+
+            <TextView
+                android:id="@+id/bedstat_text_covidcentre_ventilator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:text="5000"
+                android:textColor="#9DFF48"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bedstat_text_covidcentre_oxygen" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,7 +17,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Mystat extends AppCompatActivity {
 
-    TextView id;
+   /* TextView id;
     TextView status;
 
     Button submit;
@@ -26,6 +26,8 @@ public class Mystat extends AppCompatActivity {
     DatabaseReference ref;
 
     String temp_id;
+
+    */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,9 +41,9 @@ public class Mystat extends AppCompatActivity {
         top.setMarqueeRepeatLimit(-1);
         top.setFocusable(true);
         top.setFocusableInTouchMode(true);*/
-        TextView tv =(TextView)this.findViewById(R.id.tv);
+        TextView tv = (TextView) this.findViewById(R.id.tv);
         tv.setSelected(true);
-        db = FirebaseDatabase.getInstance();
+       /* db = FirebaseDatabase.getInstance();
         ref = db.getReference("Member");
 
         id = findViewById(R.id.mystat_text_id);
@@ -49,8 +51,8 @@ public class Mystat extends AppCompatActivity {
 
         submit = findViewById(R.id.mystat_button_status);
 
-        TextView tv =(TextView)this.findViewById(R.id.tv);
-        tv.setSelected(true);
+        //TextView tv =(TextView)this.findViewById(R.id.tv);
+        //tv.setSelected(true);
 
 
         submit.setOnClickListener(new View.OnClickListener() {
@@ -73,5 +75,6 @@ public class Mystat extends AppCompatActivity {
                 });
             }
         });
+    }*/
     }
 }

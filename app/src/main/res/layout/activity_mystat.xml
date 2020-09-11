@@ -46,13 +46,13 @@
             android:id="@+id/mystat_scroll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#E804E4">
+            android:background="@drawable/curves">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/mystat_card_constraint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#E708EF">
+                >
 
                 <EditText
                     android:id="@+id/mystat_text_id"
@@ -66,7 +66,7 @@
                     android:ems="10"
                     android:hint="Enter Covid BLR ID"
                     android:inputType="textPersonName"
-                    android:textColor="#000000"
+                    android:textColor="#9DFF48"
                     android:textColorHighlight="#FFFFFF"
                     android:textColorHint="#959090"
                     android:textSize="30dp"
@@ -86,7 +86,7 @@
                     android:layout_marginBottom="100dp"
                     android:ellipsize="marquee"
                     android:text="Loading Status....."
-                    android:textColor="#FFFDFD"
+                    android:textColor="#9DFF48"
                     android:textSize="30dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -103,9 +103,9 @@
                     android:layout_marginTop="75dp"
                     android:layout_marginEnd="100dp"
                     android:layout_marginRight="100dp"
-                    android:background="@drawable/curves"
+                    android:background="@drawable/curvesss"
                     android:text="CHECK STATUS"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#9DFF48"
                     android:textSize="30dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -123,7 +123,7 @@
                     android:layout_marginTop="10dp"
                     android:singleLine="true"
                     android:text="Stay home, stay healthy.           Your health is our only priority."
-                    android:textColor="#FFFFFF"
+                    android:textColor="#9DFF48"
                     android:textSize="20dp"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
