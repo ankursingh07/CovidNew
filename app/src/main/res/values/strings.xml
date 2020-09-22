@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Mycovid</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
     <string-array name="hospitalnamesss">
         <item>covid centre</item>
         <item>Rajiv gandhi hospital</item>
@@ -17,4 +19,6 @@
         <item>others</item>
 
     </string-array>
+
+
 </resources>
